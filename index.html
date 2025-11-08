@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guess the Word</h1>
+        <p id="hint-text">I'm thinking of a word. Can you guess it?</p>
+
+        <!-- Input area -->
+        <div id="game-input-area">
+            <input type="text" id="guess-input" class="guess-input" autocomplete="off">
+            <button id="submit-btn" class="guess-btn">Guess</button>
+        </div>
+
+        <!-- Message and Count -->
+        <div class="message-area">
+            <p id="message">Good luck!</p>
+        </div>
+        <p class="guess-count">Guesses: <span id="guess-count">0</span></p>
+
+        <!-- Action Buttons Container -->
+         <div class="action-buttons">
+            <!-- Give Up Button (Shown during game) -->
+            <button id="give-up-btn" class="secondary-btn">I Give Up</button>
+            <!-- Play Again Button (Hidden by default) -->
+            <button id="play-again-btn" class="primary-btn" style="display: none;">Play Again</button>
+        </div>
+
+    </div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>

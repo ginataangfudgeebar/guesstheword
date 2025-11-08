@@ -1,0 +1,132 @@
+/* Basic styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #334155;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+    margin-top: 0;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Input and Button */
+.guess-input {
+    width: 200px; /* Mas malapad para sa salita */
+    padding: 0.75rem;
+    font-size: 1.1rem; /* Bahagyang mas maliit na font */
+    font-weight: 600;
+    text-align: left; /* I-align sa kaliwa */
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-sizing: border-box; 
+    text-transform: lowercase; /* Force lowercase */
+}
+
+
+.guess-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3b82f6; /* Blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    vertical-align: top; /* I-align sa taas ng input */
+}
+
+.guess-btn:hover {
+    background-color: #2563eb;
+}
+
+/* Message Area */
+.message-area {
+    height: 3rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+#message {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Message colors */
+.text-hotter { color: #ef4444; } /* Red (Hotter) */
+.text-colder { color: #3b82f6; }  /* Blue (Colder) */
+.text-correct { color: #10b981; } /* Green (Correct) */
+.text-neutral { color: #64748b; } /* Gray (Neutral) */
+.text-error { color: #f97316; }   /* Orange (Error) */
+
+
+/* Guess count */
+.guess-count {
+    font-size: 1rem;
+    color: #64748b;
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 1.5rem;
+    display: flex;           /* Gamitin ang flexbox para magkatabi */
+    justify-content: center; /* I-center sila */
+    gap: 1rem;              /* Lagyan ng space sa pagitan nila */
+}
+
+.primary-btn, .secondary-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Play Again Button (Green) */
+.primary-btn {
+    background-color: #10b981; 
+}
+.primary-btn:hover {
+    background-color: #059669;
+}
+
+/* Give Up Button (Gray/Redish) */
+.secondary-btn {
+    background-color: #64748b; /* Slate gray initially */
+}
+.secondary-btn:hover {
+    background-color: #ef4444; /* Turns red on hover to warn user */
+}
